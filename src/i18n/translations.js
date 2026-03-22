@@ -1,0 +1,188 @@
+// ================================================================
+//  MODL-Digital-Craft — i18n
+//  Default: Arabic (ar) | Toggle: English (en)
+//  RULE: "MODL" brand name is NEVER translated
+// ================================================================
+
+export const translations = {
+
+  ar: {
+    dir: 'rtl', lang: 'ar',
+    navbar: {
+      links: [
+        { to: '/',        label: '٠١ الرئيسية' },
+        { to: '/studio',  label: '٠٢ الاستوديو' },
+        { to: '/gallery', label: '٠٣ المعرض' },
+        { to: '/contact', label: '٠٤ تواصل' },
+      ],
+      cta: 'ابدأ مشروعك', langBtn: 'EN',
+    },
+    footer: {
+      brandDesc: 'استوديو هندسة معمارية رقمية متخصص في النماذج المجسمة الدقيقة وتصميم الحوسبة المعمارية. نبني النماذج التي تُعرِّف مدن الغد.',
+      navigate: 'التنقل', services: 'خدماتنا', contact: 'تواصل',
+      navLinks: ['الرئيسية','الاستوديو','المعرض','تواصل معنا'],
+      servicesList: ['نمذجة ثلاثية الأبعاد','النماذج المجسمة','المحاكاة العمرانية','التصميم الخوارزمي'],
+      copyright: 'جميع الحقوق محفوظة.', operational: 'الأنظمة تعمل',
+    },
+    home: {
+      eyebrow: 'الاستوديو — تأسس ٢٠٠٩',
+      heroLine2: 'الحِرفة الرقمية',
+      subtitle: 'صمِّم المستقبل — رقمياً وفيزيائياً',
+      exploreCta: 'استكشف المعرض', studioCta: 'استوديونا',
+      specLabel: 'المشروع الحالي',
+      specRows: [
+        { k: 'المقياس', v: '1:250' },
+        { k: 'المواد', v: 'زجاج + خرسانة' },
+        { k: 'الاستدامة', v: 'تقييم A+', cls: 'green' },
+        { k: 'الحالة', v: 'قيد التصيير' },
+      ],
+      scroll: 'مرر',
+      marquee: ['نمذجة مجسمة','تصنيع رقمي','محاكاة عمرانية','تصميم باراميتري','تصوير فوتوريالي','تحليل مكاني','نمذجة مجسمة','تصنيع رقمي','محاكاة عمرانية','تصميم باراميتري','تصوير فوتوريالي','تحليل مكاني'],
+      stats: [
+        { number: '+١٨٠', label: 'مشروع مكتمل' },
+        { number: '٤٢', label: 'مدينة على مستوى العالم' },
+        { number: '%٩٨', label: 'رضا العملاء' },
+        { number: '١٥ سنة', label: 'خبرة الاستوديو' },
+      ],
+      servicesEyebrow: '// التخصصات الأساسية',
+      servicesTitle: 'ما نبنيه',
+      viewStudio: 'عرض الاستوديو الكامل ←',
+      services: [
+        { num:'٠١', title:'التصور ثلاثي الأبعاد', desc:'مخرجات بصرية فوتوريالية تُحوِّل المخططات إلى فضاءات مُعاشة قبل وضع حجر الأساس. من رسم المفهوم إلى الجولة الغامرة.' },
+        { num:'٠٢', title:'التصميم الخوارزمي', desc:'سير عمل إجرائية تعتمد على المنطق الحاسوبي — لتحسين الإضاءة الطبيعية وتدفق الهواء وحركة الإنسان على كل مقياس.' },
+        { num:'٠٣', title:'المحاكاة العمرانية', desc:'نمذجة متكاملة لقطاعات المدن بمعطيات بيئية حقيقية، تُمكِّن المخططين من اختبار المستقبل قبل إطلاق الموارد.' },
+      ],
+    },
+    about: {
+      bannerEyebrow: 'ملف الاستوديو',
+      bannerTitle: 'الاستوديو\nخلف الرؤية',
+      missionLabel: '// مهمتنا',
+      missionTitle: 'هندسة\nالأجواء',
+      missionText1: 'ندمج العالمَين الرقمي والمادي في سرد معماري واحد متماسك. لا نبني مجسمات فحسب — بل نُهندس بيئات يمكن فيها محاكاة الحياة العمرانية واختبارها وتحسينها قبل صبّ أول أساس.',
+      missionText2: 'تأسس الاستوديو عام ٢٠٠٩ على يد مجموعة من المعماريين ومصممي الحوسبة، ويقدم خدماته في مصر والمملكة العربية السعودية.',
+      quote: '"كل نموذج مجسم هو حوار بين نية المعماري والواقع البيئي. نستخدم الدقة الخوارزمية لضمان أن كل إضاءة داخلية وكل منحنى مشهدي يخدم غرضاً إنسانياً — جمال يُبرر نفسه بالأداء."',
+      valuesEyebrow: '// التخصصات الأساسية',
+      valuesTitle: 'طريقة عملنا',
+      values: [
+        { icon:'⬡', title:'التصور ثلاثي الأبعاد', desc:'مخرجات بصرية فوتوريالية تنقل النية المعمارية بوضوح مطلق. نجسر الخيال والفهم من خلال الضوء والظل والمادة.' },
+        { icon:'◈', title:'التصميم الخوارزمي', desc:'سير عمل إجرائية تُحسِّن الإضاءة الطبيعية وتدفق الهواء وحركة الإنسان. المنطق الحاسوبي يخدم التجربة الإنسانية — لا العكس.' },
+        { icon:'◎', title:'المحاكاة العمرانية', desc:'نمذجة واسعة النطاق لقطاعات المدن بمعطيات فيزيائية حقيقية. اختبر المستقبل وحسِّن النتائج وانطلق بثقة قبل كسر الأرض.' },
+      ],
+      statusFocus:'التركيز الحالي', statusFocusVal:'الطابق ٤٢ / أستوديو أ',
+      statusLight:'حالة الإضاءة', statusLightVal:'دافئ داخلي',
+      statusRender:'التصييرات النشطة', statusRenderVal:'٣ في الانتظار',
+    },
+    gallery: {
+      eyebrow: 'المستوى ٠٤ — أرشيف المشاريع',
+      title: 'نماذج حقيقية، ', titleEm: 'مقاييس حقيقية',
+      desc: 'مجموعة مختارة من نماذج معمارية مجسمة — من نماذج فيلا لمعارض إلى مخططات شوارع عمرانية — مصنوعة بإضاءة دقيقة وتفاصيل مصغرة.',
+      cta: '← استعراض المشروع',
+      studyTitle: 'حِرفتنا في النمذجة',
+      studyDesc: 'كل نموذج في استوديونا مُجمَّع يدوياً ومضاء بدقة. خمسة أنواع من المشاريع — فيلات، فنادق، مخططات عمرانية، تصاميم داخلية، مساقط أفقية — ومعيار واحد لا يتهاون.',
+      works: [
+        { tag:'تخطيط عمراني — نموذج رئيسي', title:'شارع المدينة: حياة الشارع بالمقياس', desc:'نموذج رئيسي حضري مضاء بالكامل يصور منطقة بوليفار متكاملة — تداور دوار وشوارع مبطنة بالنخيل ومبانٍ سكنية وحياة المشاة.', date:'يناير ٢٠٢٦' },
+        { tag:'سكني — نموذج فيلا', title:'فيلا معاصرة: الشكل والتفاصيل وسياق الموقع', desc:'نموذج معرض دقيق لفيلا حديثة بألواح واجهة مقطوعة بالليزر، موقع مشجر، إضاءة شوارع، ومركبات مصغرة — معروض على قاعدة عرض مضاءة.', date:'ديسمبر ٢٠٢٥' },
+        { tag:'ضيافة — مجمع فندقي', title:'حي الفندق: الكتلة والمشهد والتوهج الليلي', desc:'نموذج منظور جوي لمجمع فندقي بوتيكي بواجهات قوسية وهياكل بيرغولا ومرفق مسبح وإضاءة خارجية كاملة.', date:'نوفمبر ٢٠٢٥' },
+        { tag:'تصميم داخلي — مقطع سكني', title:'مسكن مفتوح المساحة: دراسة غرفة بغرفة', desc:'نموذج مقطوع يكشف كل غرفة في منزل من طابقين — غرف نوم مؤثثة، تجهيزات حمام، مطبخ، درج، وتخزين — مضاء لمحاكاة ظروف المعيشة.', date:'أكتوبر ٢٠٢٥' },
+        { tag:'تجاري — دراسة مسقط', title:'طابق متعدد الوحدات: نموذج مسقط علوي', desc:'نموذج مقطع علوي لطابق تجاري كامل — أجنحة فردية وقاعات اجتماعات وممرات مشتركة ومساحات لوبي بإضاءة دافئة.', date:'سبتمبر ٢٠٢٥' },
+      ],
+    },
+    contact: {
+      bgText:'تواصل', badge:'المحطة نشطة',
+      title:'أنشئ', titleAccent:'تواصلاً.',
+      subtitle:'تواصل مباشر مع استوديو التصميم. معماريونا ومهندسونا جاهزون لملخص مشروعك القادم.',
+      locLabel:'الموقع الجغرافي', locValue:'الجيزة، مصر',
+      sigLabel:'الإشارة الرقمية',
+    },
+  },
+
+  en: {
+    dir: 'ltr', lang: 'en',
+    navbar: {
+      links: [
+        { to: '/',        label: '01 Home'    },
+        { to: '/studio',  label: '02 Studio'  },
+        { to: '/gallery', label: '03 Gallery' },
+        { to: '/contact', label: '04 Contact' },
+      ],
+      cta: 'Start a Project', langBtn: 'ع',
+    },
+    footer: {
+      brandDesc: "A precision digital architecture studio where physical craftsmanship meets computational design. We build the models that define tomorrow's cities.",
+      navigate: 'Navigate', services: 'Services', contact: 'Contact',
+      navLinks: ['Home','Studio','Gallery','Contact'],
+      servicesList: ['3D Visualization','Scale Modeling','Urban Simulation','Algorithmic Design'],
+      copyright: 'All rights reserved.', operational: 'Systems Operational',
+    },
+    home: {
+      eyebrow: 'Studio — Est. 2009',
+      heroLine2: 'Digital Craft',
+      subtitle: 'Design the Future — Digitally & Physically',
+      exploreCta: 'Explore Gallery', studioCta: 'Our Studio',
+      specLabel: 'Active Project',
+      specRows: [
+        { k: 'Scale', v: '1:250' },
+        { k: 'Materials', v: 'Glass + Concrete' },
+        { k: 'Sustainability', v: 'A+ Rating', cls: 'green' },
+        { k: 'Status', v: 'In Render' },
+      ],
+      scroll: 'Scroll',
+      marquee: ['Scale Modeling','Digital Fabrication','Urban Simulation','Parametric Design','Photorealistic Rendering','Spatial Analysis','Scale Modeling','Digital Fabrication','Urban Simulation','Parametric Design','Photorealistic Rendering','Spatial Analysis'],
+      stats: [
+        { number: '180+', label: 'Projects Completed' },
+        { number: '42', label: 'Global Cities Mapped' },
+        { number: '98%', label: 'Client Satisfaction' },
+        { number: '15yr', label: 'Studio Experience' },
+      ],
+      servicesEyebrow: '// Core Disciplines',
+      servicesTitle: 'What We Build',
+      viewStudio: 'View Full Studio →',
+      services: [
+        { num:'01', title:'3D Visualization', desc:'Photorealistic spatial renderings that breathe life into speculative structures before a single stone is placed. From concept sketch to immersive flythrough.' },
+        { num:'02', title:'Algorithmic Design', desc:'Generative workflows powered by computational logic — optimizing for natural light, airflow, and human circulation at every scale of intervention.' },
+        { num:'03', title:'Urban Simulation', desc:'Complex large-scale city-sector modeling with real-world environmental physics data, enabling planners to test futures before committing resources.' },
+      ],
+    },
+    about: {
+      bannerEyebrow: 'Studio Profile',
+      bannerTitle: 'The Studio\nBehind the Vision',
+      missionLabel: '// Our Mission',
+      missionTitle: 'Engineering\nAtmospheres',
+      missionText1: "We synthesize the digital and physical realms into a single, cohesive architectural narrative. We don't just build models — we engineer environments where urban life can be simulated, tested, and refined before the first foundation is poured.",
+      missionText2: 'Founded in 2009 by a collective of architects and computational designers, MODL-Digital-Craft proudly serves clients across Egypt and Saudi Arabia.',
+      quote: '"Every scale model is a dialogue between the architect\'s intent and environmental reality. We use algorithmic rigor to ensure every interior glow and landscape curve serves a purposeful human outcome — beauty that justifies itself through performance."',
+      valuesEyebrow: '// Core Disciplines',
+      valuesTitle: 'How We Work',
+      values: [
+        { icon:'⬡', title:'3D Visualization', desc:'Photorealistic spatial renderings that communicate architectural intent with absolute clarity. We bridge imagination and comprehension through light, shadow, and material.' },
+        { icon:'◈', title:'Algorithmic Design', desc:'Generative workflows that optimize for natural light, airflow, and human circulation. Computational logic serves human experience — never the reverse.' },
+        { icon:'◎', title:'Urban Simulation', desc:'Large-scale city-sector modeling with real-world environmental physics. Test futures, refine outcomes, and commit with confidence before ground is broken.' },
+      ],
+      statusFocus:'Current Focus', statusFocusVal:'Floor 42 / Studio A',
+      statusLight:'Lighting State', statusLightVal:'Warm Interior',
+      statusRender:'Active Renders', statusRenderVal:'3 Queued',
+    },
+    gallery: {
+      eyebrow: 'Level 04 — Project Archive',
+      title: 'Real Models, ', titleEm: 'Real Scale',
+      desc: 'A curated selection of physical architectural scale models — from single-villa exhibition pieces to full urban boulevard masterplans — crafted with precision lighting, landscaping, and miniature detail.',
+      cta: 'Enter View →',
+      studyTitle: 'Our Model Craft',
+      studyDesc: 'Every model in our studio is hand-assembled and precision lit. Five project types — villas, hotels, urban plans, interiors, and floor plates — one uncompromising standard.',
+      works: [
+        { tag:'Urban Planning — Master Model', title:'City Boulevard: A Living Street at Scale', desc:'A fully illuminated urban master model capturing a complete boulevard district — roundabout circulation, palm-lined avenues, residential blocks, and pedestrian life.', date:'Jan 2026' },
+        { tag:'Residential — Villa Model', title:'Contemporary Villa: Form, Detail & Site Context', desc:'A precision exhibition model of a modern villa with decorative laser-cut façade panels, landscaped site, street lighting, and miniature vehicles.', date:'Dec 2025' },
+        { tag:'Hospitality — Hotel Complex', title:'Hotel Quarter: Massing, Landscape & Night Glow', desc:'An aerial-perspective model of a boutique hotel complex with arched façades, pergola structures, pool amenity, and full exterior lighting.', date:'Nov 2025' },
+        { tag:'Interior — Residential Cut-Section', title:'Open-Plan Residence: Room-by-Room Interior Study', desc:'A cut-away section model revealing every room of a two-storey home — furnished bedrooms, bathroom fixtures, kitchen, staircase, and storage.', date:'Oct 2025' },
+        { tag:'Commercial — Floor Plan Study', title:'Multi-Unit Floor Plate: Overhead Plan Model', desc:'A top-down cross-section model of a full commercial floor plate — individual suites, meeting rooms, shared corridors, and lobby spaces.', date:'Sep 2025' },
+      ],
+    },
+    contact: {
+      bgText:'CONNECT', badge:'Terminal Active',
+      title:'Establish', titleAccent:'Connection.',
+      subtitle:"Direct transmission to the design studio. Our architects and engineers are on standby for your next project brief.",
+      locLabel:'Location', locValue:'Giza, Egypt',
+      sigLabel:'Digital Signal',
+    },
+  },
+}

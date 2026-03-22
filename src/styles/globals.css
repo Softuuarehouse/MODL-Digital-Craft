@@ -216,3 +216,82 @@ img {
     --nav-height: 64px;
   }
 }
+
+/* ================================================================
+   RTL — Arabic direction overrides
+   ================================================================ */
+[dir="rtl"] body {
+  font-family: 'DM Sans', 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+/* Flip marquee direction in RTL */
+[dir="rtl"] .marquee-track {
+  animation-direction: reverse;
+}
+
+/* Hero title RTL alignment */
+[dir="rtl"] .hero__content {
+  direction: rtl;
+}
+
+[dir="rtl"] .hero__eyebrow::before,
+[dir="rtl"] .hero__eyebrow::after {
+  display: none;
+}
+
+/* Flip arrows in RTL */
+[dir="rtl"] .btn-primary svg {
+  transform: scaleX(-1);
+}
+[dir="rtl"] .btn-primary:hover svg {
+  transform: scaleX(-1) translateX(4px);
+}
+
+/* Gallery CTA arrow RTL */
+[dir="rtl"] .gallery-card__cta {
+  direction: rtl;
+}
+
+/* Service card number — ghost in background */
+[dir="rtl"] .service-card {
+  text-align: right;
+}
+
+/* Contact detail value RTL */
+[dir="rtl"] .contact__detail-value {
+  direction: rtl;
+}
+
+/* Footer brand RTL */
+[dir="rtl"] .footer__brand-name,
+[dir="rtl"] .footer__brand-desc {
+  text-align: right;
+}
+
+/* Section headers RTL */
+[dir="rtl"] .section-header {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .about__mission {
+  direction: rtl;
+}
+[dir="rtl"] .about__mission-quote {
+  border-left: none;
+  border-right: 2px solid var(--gold-700);
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+/* Stats RTL */
+[dir="rtl"] .stat-item {
+  border-left: none;
+  border-right: 1px solid var(--color-border);
+}
+
+/* Navbar RTL: put logo on right, links on left */
+[dir="rtl"] .navbar {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .navbar__links {
+  flex-direction: row-reverse;
+}
