@@ -1,0 +1,339 @@
+.contact {
+  min-height: 88vh;
+  padding-top: var(--nav-height);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Background ── */
+.contact__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contact__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.07;
+  filter: grayscale(80%);
+}
+
+.contact__bg-gradient {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 60% 20%,
+    rgba(200,169,110,0.08) 0%,
+    transparent 60%
+  );
+}
+
+.contact__bg-text {
+  position: absolute;
+  bottom: 8%;
+  left: 4%;
+  font-family: var(--font-display);
+  font-size: clamp(6rem, 18vw, 22rem);
+  color: rgba(255,255,255,0.018);
+  line-height: 1;
+  pointer-events: none;
+  white-space: nowrap;
+  user-select: none;
+  letter-spacing: 0.05em;
+}
+
+/* ── Inner — info-only variant: full-width, centred ── */
+.contact__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5rem clamp(1.5rem, 5vw, 5rem) 8rem;
+}
+
+.contact__inner--info-only {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Header ── */
+.contact__header {
+  max-width: 700px;
+  margin-bottom: 5rem;
+  animation: fadeSlideUp 0.8s var(--ease-expo) 0.1s both;
+}
+
+.contact__status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--color-border-warm);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-gold);
+  margin-bottom: 2.5rem;
+}
+
+.contact__status-badge .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--green-500);
+  box-shadow: 0 0 8px var(--green-glow);
+  animation: pulse 2s infinite;
+}
+
+.contact__title {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 9vw, 9rem);
+  color: var(--text-primary);
+  line-height: 0.88;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.01em;
+}
+
+.contact__title .accent {
+  color: var(--text-gold);
+}
+
+.contact__subtitle {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 440px;
+  font-weight: 300;
+}
+
+/* ── Details grid — 3 cards in a row ── */
+.contact__details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5px;
+  background: var(--color-border);
+  margin-bottom: 0;
+  animation: fadeSlideUp 0.8s var(--ease-expo) 0.25s both;
+}
+
+.contact__detail-card {
+  background: var(--color-bg);
+  padding: 2.5rem 3rem;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.contact__detail-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gold-500);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-expo);
+}
+
+.contact__detail-card:hover {
+  background: var(--color-surface);
+}
+
+.contact__detail-card:hover::before {
+  transform: scaleX(1);
+}
+
+.contact__detail-label {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-gold);
+  margin-bottom: 1rem;
+}
+
+.contact__detail-value {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  color: var(--text-primary);
+  line-height: 1.25;
+  transition: transform 0.3s var(--ease-expo);
+  cursor: default;
+}
+
+.contact__detail-card:hover .contact__detail-value {
+  transform: translateX(6px);
+}
+
+.contact__detail-sub {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  margin-top: 0.4rem;
+  letter-spacing: 0;
+}
+
+/* ── Divider ── */
+.contact__divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-border);
+  margin: 5rem 0 4rem;
+  animation: fadeSlideUp 0.8s var(--ease-expo) 0.35s both;
+}
+
+/* ── Social channels ── */
+.contact__channels {
+  animation: fadeSlideUp 0.8s var(--ease-expo) 0.45s both;
+}
+
+.contact__channels-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-gold);
+  margin-bottom: 2rem;
+}
+
+.contact__channels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.contact__channel-item {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+  text-decoration: none;
+  gap: 1rem;
+  transition: padding-left 0.3s var(--ease-expo);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__channel-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(200,169,110,0.03);
+  transform: translateX(-100%);
+  transition: transform 0.4s var(--ease-expo);
+}
+
+.contact__channel-item:hover {
+  padding-left: 1rem;
+}
+
+.contact__channel-item:hover::before {
+  transform: translateX(0);
+}
+
+.contact__channel-id {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.contact__channel-item:hover .contact__channel-id {
+  color: var(--text-primary);
+}
+
+.contact__channel-handle {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.contact__channel-item:hover .contact__channel-handle {
+  color: var(--text-gold);
+}
+
+.contact__channel-arrow {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  transition: transform 0.3s var(--ease-spring), color 0.2s ease;
+}
+
+.contact__channel-item:hover .contact__channel-arrow {
+  transform: translateX(6px);
+  color: var(--text-gold);
+}
+
+/* ── System bar ── */
+.contact__sys-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 4rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  animation: fadeSlideUp 0.8s var(--ease-expo) 0.55s both;
+}
+
+.contact__sys-bar svg {
+  color: var(--text-gold);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.contact__sys-divider {
+  color: var(--color-border);
+  margin: 0 0.25rem;
+}
+
+.contact__sys-time {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* ── Animations ── */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .contact__details-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact__details-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact__detail-card {
+    padding: 2rem;
+  }
+  .contact__channel-item {
+    grid-template-columns: 120px 1fr auto;
+  }
+  .contact__channel-id {
+    font-size: 1.2rem;
+  }
+}
