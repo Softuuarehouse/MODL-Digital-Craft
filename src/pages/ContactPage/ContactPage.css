@@ -305,6 +305,25 @@
   font-weight: 500;
 }
 
+.contact__wa-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+  color: var(--text-primary);           
+  transition: color 0.25s ease, transform 0.25s var(--ease-expo);
+}
+
+.contact__wa-link:hover {
+  color: #25D366;                        
+  transform: translateX(4px);
+}
+
+.contact__wa-icon {
+  width: 1em;                            
+  height: 1em;
+  flex-shrink: 0;
+}
 /* ── Animations ── */
 @keyframes fadeSlideUp {
   from { opacity: 0; transform: translateY(20px); }

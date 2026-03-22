@@ -54,6 +54,26 @@
   color: var(--text-primary);
 }
 
+/* ── WhatsApp link ── */
+.footer__wa-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: color 0.2s ease;
+}
+
+.footer__wa-link:hover {
+  color: #25D366; /* WhatsApp green on hover */
+}
+
+.footer__wa-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  /* inherits currentColor so it matches the link text */
+}
+
+/* ── Bottom bar ── */
 .footer__bottom {
   max-width: 1440px;
   margin: 3rem auto 0;
