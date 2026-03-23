@@ -1,21 +1,17 @@
-// ================================================================
-//  MODL-Digital-Craft — i18n
-//  Default: Arabic (ar) | Toggle: English (en)
-//  RULE: "MODL" brand name is NEVER translated
-// ================================================================
-
 export const translations = {
 
   ar: {
     dir: 'rtl', lang: 'ar',
     navbar: {
+      hlogo:'MODL-الحِرفة-الرقمية',
       links: [
         { to: '/',        label: '٠١ الرئيسية' },
         { to: '/studio',  label: '٠٢ الاستوديو' },
         { to: '/gallery', label: '٠٣ المعرض' },
         { to: '/contact', label: '٠٤ تواصل' },
       ],
-      cta: 'ابدأ مشروعك', langBtn: 'EN',
+      cta: 'ابدأ مشروعك', 
+      langBtn: 'EN',
     },
     footer: {
       brandDesc: 'استوديو هندسة معمارية رقمية متخصص في النماذج المجسمة الدقيقة وتصميم الحوسبة المعمارية. نبني النماذج التي تُعرِّف مدن الغد.',
@@ -25,7 +21,7 @@ export const translations = {
       copyright: 'جميع الحقوق محفوظة.', operational: 'الأنظمة تعمل',
     },
     home: {
-      eyebrow: 'الاستوديو — تأسس ٢٠٠٩',
+      eyebrow: 'الاستوديو — تأسس ٢٠٠١',
       heroLine2: 'الحِرفة الرقمية',
       subtitle: 'صمِّم المستقبل — رقمياً وفيزيائياً',
       exploreCta: 'استكشف المعرض', studioCta: 'استوديونا',
@@ -42,7 +38,7 @@ export const translations = {
         { number: '+١٨٠', label: 'مشروع مكتمل' },
         { number: '٤٢', label: 'مدينة على مستوى العالم' },
         { number: '%٩٨', label: 'رضا العملاء' },
-        { number: '١٥ سنة', label: 'خبرة الاستوديو' },
+        { number: '٢٥ سنة', label: 'خبرة الاستوديو' },
       ],
       servicesEyebrow: '// التخصصات الأساسية',
       servicesTitle: 'ما نبنيه',
@@ -93,12 +89,14 @@ export const translations = {
       subtitle:'تواصل مباشر مع استوديو التصميم. معماريونا ومهندسونا جاهزون لملخص مشروعك القادم.',
       locLabel:'الموقع الجغرافي', locValue:'الجيزة، مصر',
       sigLabel:'الإشارة الرقمية',
+      whatsapptext:'مرحباً! لقد وجدتكم من خلال موقعكم الإلكتروني وأود معرفة المزيد عن خدماتكم.',
     },
   },
 
   en: {
     dir: 'ltr', lang: 'en',
     navbar: {
+      hlogo:'MODL-Digital-Craft',
       links: [
         { to: '/',        label: '01 Home'    },
         { to: '/studio',  label: '02 Studio'  },
@@ -115,7 +113,7 @@ export const translations = {
       copyright: 'All rights reserved.', operational: 'Systems Operational',
     },
     home: {
-      eyebrow: 'Studio — Est. 2009',
+      eyebrow: 'Studio — Est. 2001',
       heroLine2: 'Digital Craft',
       subtitle: 'Design the Future — Digitally & Physically',
       exploreCta: 'Explore Gallery', studioCta: 'Our Studio',
@@ -132,7 +130,7 @@ export const translations = {
         { number: '180+', label: 'Projects Completed' },
         { number: '42', label: 'Global Cities Mapped' },
         { number: '98%', label: 'Client Satisfaction' },
-        { number: '15yr', label: 'Studio Experience' },
+        { number: '25yr', label: 'Studio Experience' },
       ],
       servicesEyebrow: '// Core Disciplines',
       servicesTitle: 'What We Build',
@@ -183,6 +181,7 @@ export const translations = {
       subtitle:"Direct transmission to the design studio. Our architects and engineers are on standby for your next project brief.",
       locLabel:'Location', locValue:'Giza, Egypt',
       sigLabel:'Digital Signal',
+      whatsapptext:'Hello! I found you through your website and I like to learn more about your services',
     },
   },
 }

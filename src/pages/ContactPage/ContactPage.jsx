@@ -1,9 +1,6 @@
 import { useLang } from '../../i18n/LangContext'
 import './ContactPage.css'
 
-const WA_NUMBER  = '201008555281'
-const WA_MESSAGE = encodeURIComponent("Hello! I found you through your website and I'd like to learn more about your services.")
-
 function WhatsAppIcon() {
   return (
     <svg className="contact__wa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -15,6 +12,9 @@ function WhatsAppIcon() {
 export default function ContactPage() {
   const { t } = useLang()
   const c      = t.contact
+  const WA_NUMBER  = '201008555281'
+  const WA_MESSAGE = encodeURIComponent(c.whatsapptext)
+
   const waLink = `https://wa.me/${WA_NUMBER}?text=${WA_MESSAGE}`
 
   return (

@@ -8,7 +8,7 @@ export default function Navbar() {
   const [open, setOpen]         = useState(false)
   const navigate  = useNavigate()
   const { t, toggle } = useLang()
-  const { links, cta, langBtn } = t.navbar
+  const { hlogo , links, cta, langBtn } = t.navbar
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 40)
@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* Logo — MODL never translated */}
         <Link to="/" className="navbar__logo">
           <div className="navbar__logo-mark"><span /></div>
-          <span className="navbar__logo-text">MODL-Digital-Craft</span>
+          <span className="navbar__logo-text">{hlogo}</span>
         </Link>
 
         {/* Desktop links */}
